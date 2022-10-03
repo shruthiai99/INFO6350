@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="KGk-i7-Jjw" customClass="TouristTableViewCell" customModule="TouristPlacesApp">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="192"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="192"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="EiffleTower" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPS-bA-1IK">
+                        <rect key="frame" x="21" y="165" width="258" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="EiffleTower" translatesAutoresizingMaskIntoConstraints="NO" id="8eM-Sl-lNL">
+                        <rect key="frame" x="5" y="17" width="290" height="128"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="IPS-bA-1IK" secondAttribute="trailing" constant="5" id="8bG-En-PWQ"/>
+                    <constraint firstItem="8eM-Sl-lNL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Bfk-1m-phV"/>
+                    <constraint firstItem="IPS-bA-1IK" firstAttribute="top" secondItem="8eM-Sl-lNL" secondAttribute="bottom" constant="5" id="FQQ-81-fVU"/>
+                    <constraint firstItem="IPS-bA-1IK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="JUF-Yh-h3I"/>
+                    <constraint firstItem="IPS-bA-1IK" firstAttribute="top" secondItem="8eM-Sl-lNL" secondAttribute="bottom" constant="5" id="Ptp-mU-fH4"/>
+                    <constraint firstItem="8eM-Sl-lNL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Qv9-5T-mc4"/>
+                    <constraint firstItem="8eM-Sl-lNL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Vbf-gM-njq"/>
+                    <constraint firstAttribute="trailing" secondItem="8eM-Sl-lNL" secondAttribute="trailing" constant="5" id="Xpl-sW-zOE"/>
+                    <constraint firstItem="8eM-Sl-lNL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="h2D-qc-0kc"/>
+                    <constraint firstItem="IPS-bA-1IK" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="5" id="u3V-6o-5au"/>
+                    <constraint firstAttribute="trailing" secondItem="8eM-Sl-lNL" secondAttribute="trailing" constant="5" id="v2X-hw-5hK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgPlace" destination="8eM-Sl-lNL" id="awX-CF-Dbs"/>
+                <outlet property="lblPlace" destination="IPS-bA-1IK" id="Q77-hG-Xui"/>
+            </connections>
+            <point key="canvasLocation" x="21.538461538461537" y="95.97156398104265"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="EiffleTower" width="400" height="250"/>
+    </resources>
+</document>
